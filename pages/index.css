@@ -1,0 +1,60 @@
+@import url(../vendor/font/fonts.css);
+
+.body-style {
+  background-color: #000000;
+}
+
+.page {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.header {
+  max-width: 880px;
+  margin: 45px auto 0 auto;
+  border-bottom: solid 1px #545454;
+}
+
+.logo {
+  width: 142px;
+  height: 33px;
+  background-image: url(../images/Vector.png);
+  margin-bottom: 41px;
+}
+
+.profile {
+  max-width: 880px;
+  margin: 40px auto 0 auto;
+  display: flex;
+}
+
+.avatar {
+  width: 168.75px;
+  display: flex;
+}
+.profile__image {
+  display: block;
+  width: 120px;
+  border-radius: 60px;
+  margin: 3.75px auto 3.75px auto;
+}
+.profile__title {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 48px;
+  /* or 114% */
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.profile__subtitle {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+  margin: 0;
+}

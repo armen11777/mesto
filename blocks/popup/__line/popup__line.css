@@ -4,3 +4,9 @@
   max-width: 358px;
   opacity: 0.2;
 }
+
+@media screen and (max-width: 600px) {
+  .popup__line {
+    max-width: 238px;
+  }
+}

@@ -1,12 +1,11 @@
 .profile__text {
   max-width: 294px;
-  font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
   color: #FFFFFF;
-  margin: 0;
+  margin: 16px 0 0 0;
 }
 
 @media screen and (max-width: 600px) {

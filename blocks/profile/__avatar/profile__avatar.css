@@ -2,10 +2,8 @@
   width: 120px;
   height: 120px;
   display: block;
-  align-items: center;
   background-image: url(../../../images/image.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 60px;
-  align-self: center;
 }

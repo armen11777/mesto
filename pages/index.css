@@ -1,60 +1,36 @@
+@import url(../vendor/normalize.css);
 @import url(../vendor/font/fonts.css);
+@import url(../blocks/body-style/body-style.css);
+@import url(../blocks/page/page.css);
+@import url(../blocks/header/header.css);
+@import url(../blocks/header/__logo/header__logo.css);
+@import url(../blocks/profile/profile.css);
+@import url(../blocks/profile/__avatar/profile__avatar.css);
+@import url(../blocks/profile/__info/profile__info.css);
+@import url(../blocks/profile/__title/profile__title.css);
+@import url(../blocks/profile/__text/profile__text.css);
+@import url(../blocks/profile/__edit-button/profile__edit-button.css);
+@import url(../blocks/profile/__edit-button-image/profile__edit-button-image.css);
+@import url(../blocks/profile/__add-button/profile__add-button.css);
+@import url(../blocks/elements/elements.css);
+@import url(../blocks/element/element.css);
+@import url(../blocks/element/__image/element__image.css);
+@import url(../blocks/element/__group/element__group.css);
+@import url(../blocks/element/__title/element__title.css);
+@import url(../blocks/element/__like-button/element__like-button.css);
+@import url(../blocks/element/__like-button/_status/element__like-button_status_active.css);
+@import url(../blocks/footer/__text/footer__text.css);
+@import url(../blocks/popup/popup.css);
+@import url(../blocks/popup/_window/popup_window-opened.css);
+@import url(../blocks/popup/__content/popup__content.css);
+@import url(../blocks/popup/__title/popup__title.css);
+@import url(../blocks/popup/__close-button/popup__close-button.css);
+@import url(../blocks/popup/__line/popup__line.css);
+@import url(../blocks/popup/__input/popup__input.css);
+@import url(../blocks/popup/__button-save/popup__button-save.css);
+@import url(../blocks/popup/__button-name/popup__button-name.css);
 
-.body-style {
-  background-color: #000000;
-}
-
-.page {
-  max-width: 1280px;
-  margin: 0 auto;
-}
-
-.header {
-  max-width: 880px;
-  margin: 45px auto 0 auto;
-  border-bottom: solid 1px #545454;
-}
-
-.logo {
-  width: 142px;
-  height: 33px;
-  background-image: url(../images/Vector.png);
-  margin-bottom: 41px;
-}
-
-.profile {
-  max-width: 880px;
-  margin: 40px auto 0 auto;
+.profile__conteiner{
   display: flex;
-}
-
-.avatar {
-  width: 168.75px;
-  display: flex;
-}
-.profile__image {
-  display: block;
-  width: 120px;
-  border-radius: 60px;
-  margin: 3.75px auto 3.75px auto;
-}
-.profile__title {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 42px;
-  line-height: 48px;
-  /* or 114% */
-  color: #FFFFFF;
-  margin: 0;
-}
-
-.profile__subtitle {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 22px;
-  color: #FFFFFF;
-  margin: 0;
+  margin-top: 22.25px;
 }

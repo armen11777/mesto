@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./pages/index.css">
   <script src="./scripts/index.js" defer></script>
-  <title>Document</title>
+  <title>Mesto</title>
 </head>
 <body class="body-style">
   <div class="page">
@@ -15,9 +15,9 @@
     </header>
     <main class="content">
       <section class="profile">
-        <div class="profile__image"><div class="profile__avatar"></div></div>
+        <div class="profile__avatar"></div>
         <div class="profile__info">
-          <div class="profile__conteiner">
+          <div class="profile__container">
             <h1 class="profile__title">Жак-Ив Кусто</h1>
             <button class="profile__edit-button"><img class="profile__edit-button-image" src="./images/edit-button.png" alt=""></button>
           </div>
@@ -26,48 +26,50 @@
         <button class="profile__add-button"><img class="profile__add-button-image" src="./images/profile__edit-button-image.png" alt=""></button>
       </section>
       <section class="elements">
-        <div class="element">
-          <img src="./images/kirill-pershin-1088404-unsplash.png" class="element__image" alt="Храм на склоне горы">
-          <div class="element__group">
-            <p class="element__title">Карачаевск</p>
-            <button class="element__like-button"></button>
-          </div>
-        </div>
-        <div class="element">
-          <img src="./images/kirill-pershin-1556355-unsplash.png" class="element__image" alt="Вид на гору Эльбрус">
-          <div class="element__group">
-            <h2 class="element__title">Гора Эльбрус</h2>
-            <button class="element__like-button"></button>
-          </div>
-        </div>
-        <div class="element">
-          <img src="./images/kirill-pershin-1404681-unsplash.png" class="element__image" alt="Горные склоны">
-          <div class="element__group">
-            <p class="element__title">Домбай</p>
-            <button class="element__like-button"></button>
-          </div>
-        </div>
-        <div class="element">
-          <img src="./images/kirill-pershin-1404681-unsplash.png" class="element__image" alt="Вид на гору Эльбрус">
-          <div class="element__group">
-            <p class="element__title">Гора Эльбрус</p>
-            <button class="element__like-button"></button>
-          </div>
-        </div>
-        <div class="element">
-          <img src="./images/kirill-pershin-1556355-unsplash.png" class="element__image" alt="Горные склоны">
-          <div class="element__group">
-            <p class="element__title">Домбай</p>
-            <button class="element__like-button"></button>
-          </div>
-        </div>
-        <div class="element">
-          <img src="./images/kirill-pershin-1088404-unsplash.png" class="element__image" alt="Храм на склоне горы">
-          <div class="element__group">
-            <p class="element__title">Карачаево-Черкессия</p>
-            <button class="element__like-button"></button>
-          </div>
-        </div>
+        <ul class="elements-list">
+          <li class="element">
+            <img src="./images/kirill-pershin-1088404-unsplash.png" class="element__image" alt="Храм на склоне горы">
+            <div class="element__group">
+              <p class="element__title">Карачаевск</p>
+              <button class="element__like-button"></button>
+            </div>
+          </li>
+          <li class="element">
+            <img src="./images/kirill-pershin-1556355-unsplash.png" class="element__image" alt="Вид на гору Эльбрус">
+            <div class="element__group">
+              <h2 class="element__title">Гора Эльбрус</h2>
+              <button class="element__like-button"></button>
+            </div>
+          </li>
+          <li class="element">
+            <img src="./images/kirill-pershin-1404681-unsplash.png" class="element__image" alt="Горные склоны">
+            <div class="element__group">
+              <p class="element__title">Домбай</p>
+              <button class="element__like-button"></button>
+            </div>
+          </li>
+          <li class="element">
+            <img src="./images/kirill-pershin-1404681-unsplash.png" class="element__image" alt="Вид на гору Эльбрус">
+            <div class="element__group">
+              <p class="element__title">Гора Эльбрус</p>
+              <button class="element__like-button"></button>
+            </div>
+          </li>
+          <li class="element">
+            <img src="./images/kirill-pershin-1556355-unsplash.png" class="element__image" alt="Горные склоны">
+            <div class="element__group">
+              <p class="element__title">Домбай</p>
+              <button class="element__like-button"></button>
+            </div>
+          </li>
+          <li class="element">
+            <img src="./images/kirill-pershin-1088404-unsplash.png" class="element__image" alt="Храм на склоне горы">
+            <div class="element__group">
+              <p class="element__title">Карачаево-Черкессия</p>
+              <button class="element__like-button"></button>
+            </div>
+          </li>
+        </ul>
       </section>
     </main>
     <footer class="footer">
@@ -76,12 +78,10 @@
     <div class="popup">
       <div class="popup__content">
         <h2 class="popup__title">Редактировать профиль</h2>
-        <form class="popup__form-edit">
+        <form class="popup__form-edit" name="form-edit">
           <button class="popup__close-button"></button>
-          <input class="popup__input" id="name_text">
-          <hr class="popup__line">
-          <input class="popup__input" id="description_text">
-          <hr class="popup__line">
+          <input class="popup__input" id="name_text" name="popup-name-text" placeholder="Введите текст">
+          <input class="popup__input" id="description_text" name="popup-description-text" placeholder="Введите текст">
           <button class="popup__button-save">Сохранить</button>
         </form>
       </div>

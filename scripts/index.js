@@ -6,11 +6,11 @@ const nameInput = formElement.querySelector('#name_text');
 const jobInput = formElement.querySelector('#description_text');
 const elementsList = document.querySelector('.elements-list');
 const elementTemplate = document.querySelector('#element-template').content;
-const popupImgView = document.querySelector('.popup_img');
-const closePopupImg = document.querySelector('.popup__close-button_form_img'); 
+const popupImgView = document.querySelector('.popup_view_img');
+const closePopupImg = document.querySelector('.popup__close-button_view_img'); 
 const addImageButton = document.querySelector('.profile__add-button');
 const popupAddImage = document.querySelector('.popup_add-image');
-const closePopupNewCard = document.querySelector('.popup__close-button_form_new-card');
+const closePopupNewCard = document.querySelector('.popup__close-button_add_new-card');
 const popupFormAdd = document.querySelector('.popup__form-add');
 const nameInputImg = popupFormAdd.querySelector('#name-image');
 const jobInputLink = popupFormAdd.querySelector('#link-image');
@@ -51,32 +51,6 @@ function addCards(evt) {
   popupAddImage.classList.remove('popup_window-opened');
 }
 
-formElement.addEventListener('submit', handleFormSubmit); 
-popupFormAdd.addEventListener('submit', addCards)
-
-// Открытие формы редактирования профиля
-editButton.addEventListener('click', () => {
-  popup.classList.add('popup_window-opened');
-  nameInput.value = document.querySelector('.profile__title').textContent;
-  jobInput.value = document.querySelector('.profile__text').textContent;
-})
-//закрытие формы редактирования профиля
-closePopup.addEventListener('click', ()=> {
-  popup.classList.remove('popup_window-opened');
-})
-
-//Откываем форму добавления карточек
-addImageButton.addEventListener('click', () => {
-  popupAddImage.classList.add('popup_window-opened');
-})
-closePopupNewCard.addEventListener('click', ()=> {
-  popupAddImage.classList.remove('popup_window-opened');
-})
-//Закрытие попапа просмотра фотографий
-closePopupImg.addEventListener('click', () => {
-  popupImgView.classList.remove('popup_window-opened');
-});
-
 //Добавление 6 карточек
 const initialCards = [
   {
@@ -108,6 +82,30 @@ initialCards.forEach(item => {
   createCards(item.name, item.link)
 });
 
+formElement.addEventListener('submit', handleFormSubmit); 
+popupFormAdd.addEventListener('submit', addCards)
 
+// Открытие формы редактирования профиля
+editButton.addEventListener('click', () => {
+  popup.classList.add('popup_window-opened');
+  nameInput.value = document.querySelector('.profile__title').textContent;
+  jobInput.value = document.querySelector('.profile__text').textContent;
+})
+//закрытие формы редактирования профиля
+closePopup.addEventListener('click', ()=> {
+  popup.classList.remove('popup_window-opened');
+})
+
+//Откываем форму добавления карточек
+addImageButton.addEventListener('click', () => {
+  popupAddImage.classList.add('popup_window-opened');
+})
+closePopupNewCard.addEventListener('click', ()=> {
+  popupAddImage.classList.remove('popup_window-opened');
+})
+//Закрытие попапа просмотра фотографий
+closePopupImg.addEventListener('click', () => {
+  popupImgView.classList.remove('popup_window-opened');
+});
 
 

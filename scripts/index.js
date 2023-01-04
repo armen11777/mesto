@@ -41,7 +41,6 @@ function createCards (name, link) {
     popupTitkeImage = popupImgView.querySelector('.popup__title-image').textContent = name;
     popupImage.src = link;
     popupImgView.classList.add('popup_window-opened');
-    console.log(evt)
   })
 }
 
